@@ -14,6 +14,6 @@
 > npm i -S -E graphql -- esse é a implementação js do graphql
 > npm i -S -E graphql-tools  -- utilitário para criar as queries em graphql
 
-###pacotes de tipos para os pacotes instalados pois estamos utilizando o typescript
+### Pacotes de tipos para os pacotes instalados pois estamos utilizando o typescript
 > npm i -D -E @types/express-graphql
 > npm i -D -E @types/graphql@0.11.5
