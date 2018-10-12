@@ -1,4 +1,4 @@
-#EXT VS.Code :heart_eyes:
+# EXT VS.Code :heart_eyes:
 * vscode-icons
 * advanced new file
 
