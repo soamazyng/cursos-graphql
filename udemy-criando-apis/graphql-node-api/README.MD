@@ -17,3 +17,12 @@
 ### Pacotes de tipos para os pacotes instalados pois estamos utilizando o typescript
 > npm i -D -E @types/express-graphql
 > npm i -D -E @types/graphql@0.11.5
+
+### Sequelize
+> É um ORM baseado em promises para **Node.Js**
+> docs.sequelizejs.com
+> instalação: npm i -S -E sequelize
+> npm i -D -E @types/sequelize@4.0.76  **instalacao de tipos pois estamos utilizar o typescript**
+
+### Mysql
+> Instalação do mysql no projeto ** npm i -S -E mysql2

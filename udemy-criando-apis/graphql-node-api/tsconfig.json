@@ -2,8 +2,10 @@
   "compileOnSave": false,
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
-    "outDir": "dist"
+    "module": "commonjs",    
+    "lib": [
+      "esnext"
+    ]
   },  
   "include": [
     "src/**/*.ts"
