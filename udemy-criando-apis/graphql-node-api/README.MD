@@ -25,4 +25,8 @@
 > npm i -D -E @types/sequelize@4.0.76  **instalacao de tipos pois estamos utilizar o typescript**
 
 ### Mysql
-> Instalação do mysql no projeto ** npm i -S -E mysql2
+> Instalação do mysql no projeto **npm i -S -E mysql2**
+
+### Pacote do npm para criptografar senha
+> npm i -S -E bcryptjs
+> npm i -S -D -E @types/bcryptjs **esse é o pacote de tipos**
