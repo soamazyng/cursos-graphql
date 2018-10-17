@@ -30,3 +30,8 @@
 ### Pacote do npm para criptografar senha
 > npm i -S -E bcryptjs
 > npm i -S -D -E @types/bcryptjs **esse é o pacote de tipos**
+
+### Pacote do npm para conectar o sequelize ao mysql **cli que inicializa no padrão dele**
+> npm i -g sequelize-cli
+**comandos para rodar o sequelize**
+> sequelize init:config --config src/config/config.json **gera um arquivo de configuração**
