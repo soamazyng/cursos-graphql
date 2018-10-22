@@ -20,6 +20,11 @@ let db = null;
 if(!db){
   db = {};
 
+    //desliga o operador
+    const operatorsAliases = false;
+
+    config = Object.assign({operatorsAliases}, config);
+
   const sequelize: Sequelize.Sequelize = new Sequelize(
     config.database,
     config.username,
