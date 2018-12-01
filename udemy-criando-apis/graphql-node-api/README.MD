@@ -35,3 +35,8 @@
 > npm i -g sequelize-cli
 **comandos para rodar o sequelize**
 > sequelize init:config --config src/config/config.json **gera um arquivo de configuração**
+
+### Biblioteca para importar os resolvers
+> npm i -S -E lodash
+**Pacote de tipos do Lodash**
+> npm i -D -E @types/lodash@4.14.78

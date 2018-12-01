@@ -5,6 +5,17 @@ import { UserInstance } from "../../../models/UserModel";
 
 export const userResolvers = {
 
+  //resolvers
+  User: {
+    posts: (parent, {first = 10, offset = 0}, {db}: {db:DbConnection}, info: GraphQLResolveInfo) => {
+      return db.Post.findAll({
+        where: {author: parent.get('id')},
+        limit: first,
+        offset: offset        
+      });
+    }
+  },
+
   Query: {
     users: (parent, {first = 10, offset = 0}, {db}: {db:DbConnection} , info: GraphQLResolveInfo) => {
       return db.User.findAll({
@@ -62,9 +73,7 @@ export const userResolvers = {
     },
 
     deleteUserPassword: (parent, {id}, {db}: {db:DbConnection}, info: GraphQLResolveInfo) => {      
-
-      id = parseInt(id);      
-      
+      id = parseInt(id);            
       return db.sequelize.transaction((t: Transaction) => {
         return db.User
           .findById(id)
@@ -75,10 +84,6 @@ export const userResolvers = {
 
           });
       });
-
-    }    
+    }
   }
-
-  }
-
 };
